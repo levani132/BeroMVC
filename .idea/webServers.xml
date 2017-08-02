@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4414fbd4-b2f1-430b-a70a-3326e60119c9" name="HikingPartners" url="http://ftp.lbero15.heliohost.org">
+        <fileTransfer host="ftp.lbero15.heliohost.org" port="21" rootFolder="/public_html/hikingpartners">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
