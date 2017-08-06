@@ -1,5 +1,19 @@
 <?php
 
+function includeScripts($folder){
+    foreach (glob("$folder/*.js") as $filename)
+    {
+        echo "<script src='$filename'></script>\n";
+    }
+}
+
+function includeCss($folder){
+    foreach (glob("$folder/*.css") as $filename)
+    {
+        echo "<link rel='stylesheet' href='$filename'>\n";
+    }
+}
+
 function View($Model = ""){
     ob_start();
     $view = "Views/".$GLOBALS["Controller"]."/".$GLOBALS["Action"];

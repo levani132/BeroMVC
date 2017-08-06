@@ -31,7 +31,7 @@ try{
     $ControllerName = !$uris[0] || $uris[0] == '' ? "Home" : $uris[0];
     $ControllerName ='Controllers\\'.$ControllerName."Controller";
     if(!class_exists($ControllerName))
-        throw new Exception("Controller doesn't exist");
+        throw new Exception("Controller $ControllerName doesn't exist");
     $Controller = new $ControllerName;
     $Action = $uris[1] ?? "Index";
     $ActionCall = $Action;
